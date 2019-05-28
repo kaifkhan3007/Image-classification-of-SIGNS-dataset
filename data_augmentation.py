@@ -24,7 +24,7 @@ print(Y_train[0][228])
 
 id=0
 
-flip one_third of images
+#flip one_third of images
 
 for i in range(360):
     data=X_train[i].reshape(64,64,3)
@@ -37,7 +37,7 @@ for i in range(360):
     id+=1
 
 
-rotate one_third of image by 30 degrees
+#rotate one_third of image by 30 degrees
 
 for i in range(360,720):
     data = X_train[i].reshape(64, 64, 3)
@@ -49,7 +49,7 @@ for i in range(360,720):
     Y_train_new[0][id] = Y_train[0][i]
     id += 1
 
-rotate one_third of image by 60 degrees
+#rotate one_third of image by 60 degrees
 
 for i in range(720,1080):
     data = X_train[i].reshape(64, 64, 3)
